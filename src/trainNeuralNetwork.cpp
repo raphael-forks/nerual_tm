@@ -15,7 +15,7 @@
 # include <boost/interprocess/allocators/allocator.hpp>
 # include <boost/interprocess/managed_mapped_file.hpp>
 #include <boost/interprocess/containers/vector.hpp>
-
+#define EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET
 #include <Eigen/Dense>
 #include <Eigen/Sparse>
 #include "maybe_omp.h"
@@ -31,7 +31,6 @@
 //#include "gradientCheck.h"
 
 //#define EIGEN_DONT_PARALLELIZE
-
 using namespace std;
 using namespace TCLAP;
 using namespace Eigen;
